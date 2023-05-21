@@ -39,6 +39,7 @@ while True:
         user_id = input('아이디 입력 : ')
         follower = input('구매수량 입력 : ')
         repeat = int(input('반복횟수 입력 : ')) #input integer
+        repeat_time = int(input('반복지연시간 입력 : ')) #input integer
         type = int(input('외국인 팔로워(1 또는 0) :'))
         time.sleep(1)
 
@@ -78,5 +79,5 @@ while True:
 
             execution_time = end_time - start_time
             print('작업 수행 시간 :', execution_time, '초') #작업 시간 측정
-            time.sleep(5) #5초 시간지연
+            time.sleep(repeat_time)
         break

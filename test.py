@@ -1,8 +1,9 @@
 import pyautogui
 import keyboard
+import time
 
-x =  int(input('number : '))
-i = 0
-while i < x:
-    print('hello')
-    i+= 1
+timer = 3
+while timer <= 0:
+    time.sleep(1)
+    print(timer)
+    timer -= 1
